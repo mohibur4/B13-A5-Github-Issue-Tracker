@@ -8,7 +8,7 @@ if (localStorage.getItem('isLoggedIn') !== 'true') {
 
 function logout() {
   localStorage.removeItem('isLoggedIn');
-  window.location.href = 'login.html'; 
+  window.location.href = '../dashboard.html'; 
 }
 
 let allIssues   = [];
