@@ -3,12 +3,12 @@ const API_ALL    = 'https://phi-lab-server.vercel.app/api/v1/lab/issues';
 const API_SEARCH = 'https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=';
 
 if (localStorage.getItem('isLoggedIn') !== 'true') {
-  window.location.href = 'login.html';
+  window.location.href = '../dashboard.html';
 }
 
 function logout() {
   localStorage.removeItem('isLoggedIn');
-  window.location.href = '../dashboard.html'; 
+  window.location.href = '../index.html'; 
 }
 
 let allIssues   = [];
